@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+body{
+    background-image: url(../imagen/fondo1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 210vh;
+    margin: auto;
+    border: 3px solid white;
+    width: 1100px;
+    
+    
+}
+
+
+header {
+    max-width: 1100px;
+    min-height: 130px;
+    background-color: #ffbf00;
+    margin: 0 auto;
+    
+}
+
+/*menu H*/
+#horizontal {
+    max-width: 1100px;
+    min-height: 50px;
+    background: navajowhite;
+    margin: 0 auto;
+   
+   
+}
+#horizontal ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+#horizontal a{
+    color: aliceblue;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    background: black;
+    font-family: arial;
+    font-size: 19px;
+    border: 1px solid white;
+    
+}
+#horizontal a:hover{
+    background: gray;
+    
+}
+#horizontal ul ul{
+    display: none;
+    position: absolute;
+   
+}
+#horizontal ul li:hover ul{
+    display: block;
+    z-index: 2;
+    padding: 1px;
+    
+}
+
+#banner{
+    max-width: 1100px;
+    min-height: 250px;
+    background: black;
+    margin: 0 auto;
+}
+#contenedor{
+    max-width: 1100px;
+    min-height: 780px;
+    background: #fff;
+    margin: 0 auto;
+}
+.contenedor-galeria{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: auto;
+    background-color: navajowhite;
+  
+   
+}
+.galeria__img{
+    width: 250px;
+    height: 220px;
+     margin-bottom: 30px;
+    object-fit: cover;
+    border-style: solid;
+    filter: brightness(85%);
+    cursor: pointer;
+    animation: escalar 1.5s infinite alternate;
+}
+@keyframes escalar{
+    to{ 
+        transform: scale(1);
+    }
+    from{
+        transform: scale(1.02);
+    }
+    
+}
+.galeria__img:hover{
+    filter: brightness(100%);
+ 
+    
+}
+
+#contenido{
+    width: 1100px;
+    min-height: 780px;
+    background: silver;
+    float: right;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#contenido h2{
+    text-align: center;
+    font-size: 35px;
+}
+#contenido p1{
+    color: blue;
+    font-family: arial;
+    font-size: 25px;
+}
+#contenido p{
+    margin-bottom: 2px;
+    font-family: arial;
+    text-align: justify;
+    font-size: 18px;
+}
+.imagen{
+    float: left;
+    margin-right: 13px;
+    border: 0px solid;
+    
+}
+.galeria_img{
+ float: center;
+    margin-right: 10px;
+    border: 3px solid black;
+    
+    
+}   
+
+footer{
+    max-width: 1100px;
+    min-height: 130px;
+    background-color: #4c4c4c;
+    margin: 0 auto;
+    color: white;
+    text-align: left;
+    
+}
+footer a{
+    color: gold;
+}
+.redes ul{
+  list-style: none;
+  text-align: right; 
+  padding: 7px;
+  color: antiquewhite
+  
+  
+}
+.redes li{
+    display: inline-block;
+}
+ul{
+    color:black;
+    font-family: arial;
+    padding: 8px
+}
